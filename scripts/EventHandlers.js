@@ -20,6 +20,6 @@ function onChangeOption(e) {
     }
     wrapperNode.appendChild(table.tableEl);
   } catch (error) {
-    console.log('Error occured with on change option: ', error);
+    console.log(`%c Error occured with on change option: ${error}`, 'background: red; padding: 0.2rem');
   }
 }
