@@ -24,12 +24,12 @@ class DynamicTable {
     this.tableEl = document.createElement('table');
     this.tableEl.className = this.tableClasses.tableStyle;
     for (let i = 0; i < this.rowNum; ++i) {
-      let r = this._createRow();
+      let row = this._createRow();
       for (let j = 0; j < this.colNum; ++j) {
-        let c = this._createColumn();
-        r.appendChild(c);
+        let col = this._createColumn();
+        row.appendChild(col);
       }
-      this.tableEl.appendChild(r);
+      this.tableEl.appendChild(row);
     }
   }
 }

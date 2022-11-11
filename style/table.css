@@ -1,0 +1,24 @@
+.col {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: lightgray;
+}
+
+.col:hover {
+  animation: 0.5s linear 0s forwards hoverChangeBg;
+  cursor: pointer;
+}
+
+@keyframes hoverChangeBg {
+  0% {
+      background-color: gray;
+  }
+
+  50% {
+      background-color: darkgrey;
+  }
+
+  100% {
+      background-color: greenyellow;
+  }
+}
