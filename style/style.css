@@ -7,7 +7,26 @@
 
 .game-table {
     margin: 0 auto;
-    align-items: center;
+    padding: 20px;  
     justify-content: center;
-    vertical-align: middle;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+#size-options {
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #efeeee;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    place-items: center;
+}
+
+h1 label {
+    color: #777;
 }
