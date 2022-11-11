@@ -1,7 +1,7 @@
 function onChangeOption(e) {
-  let selectedOpt = e.target.value;
-  let [width, height] = OPTIONS[selectedOpt];
   try {
+    let selectedOpt = e.target.value;
+    let [width, height] = OPTIONS[selectedOpt];
     let table = new DynamicTable(width, height, {
       tableStyle: 'game-table',
       rowStyle: 'row',
@@ -11,8 +11,8 @@ function onChangeOption(e) {
     let wrapperNode = document.querySelector('.wrapper');
     let numOfChild = wrapperNode.children.length;
     if (numOfChild > 0) {
-      for (let i = 0; i < numOfChild ; ++i) {
-        if(wrapperNode.children[i].className === 'game-table') {
+      for (let i = 0; i < numOfChild; ++i) {
+        if (wrapperNode.children[i].className === 'game-table') {
           wrapperNode.children[i].remove();
           break;
         }
