@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Poppins', sans-serif;;
 }
 
 .game-table {
@@ -30,3 +31,4 @@ body {
 h1 label {
     color: #777;
 }
+
