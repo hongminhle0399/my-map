@@ -1,3 +1,7 @@
+* {
+    text-align: center;
+}
+
 .game-table {
     margin: 0 auto;
     padding: 20px;  
@@ -14,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #efeeee;
+    background: #eeefee;
     font-family: 'Poppins', sans-serif;
     margin: auto;
     place-items: center;
@@ -25,7 +29,47 @@ h1 label {
 }
 
 .wrapper {
-    position: relative;
     width: 100vw;
-    min-height: 60rem;
+    min-height: 40rem;
+}
+
+.relative {
+    padding: 20px;
+}
+
+.navitem {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#black {
+    background-color: black;
+    box-shadow: 9px 9px 16px rgba(92, 93, 94, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+#black:hover {
+    background-color: rgb(39, 38, 38);
+    
+}
+
+#blue {
+    background-color: rgb(47, 58, 217);
+    box-shadow: 9px 9px 16px rgba(124, 147, 181, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+#blue:hover {
+    background-color: rgb(71, 79, 192);
+}
+
+#white {
+    background-color: #efeeee;
+    box-shadow: 9px 9px 16px rgba(124, 147, 181, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+#white:hover {
+    background-color: rgb(199, 199, 199);
 }
