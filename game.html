@@ -11,42 +11,60 @@
     <link rel="stylesheet" href="./style/game-mode.css" />
     <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <title>Connect Four</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <input type="checkbox" id="check">
         <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
         <div class="side_bar">
             <div class="title">
-                <div class="logo">Connect Four</div>
+                <div class="logo">Menu</div>
                 <label for="check" class=" button cancel"><i class="fas fa-times"></i></label>
             </div>
             <ul>
-                <li><a href="index.html"><i class="fas fa-qrcode"></i>Main</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i>Main</a></li>
                 <li><a href="help.html"><i class="fas fa-question-circle"></i>Help</a></li>
                 <li><a href="contact.html"><i class="fas fa-phone-volume"></i>Contact</a></li>
-                <li><a href="game.html"><i class="fas fa-link"></i>Game</a></li>
-                <li><a href="leader-board.html"><i class="fas fa-stream"></i>Leader Board</a></li>
+                <li><a href="game.html"><i class='fas fa-gamepad'></i>Game</a></li>
+                <li><a href="leader-board.html"><i class="fa fa-trophy"></i>Leader Board</a></li>
+                <li><a href="login.html"><i class='fas fa-sign-out-alt'></i>Log Out</a></li>
             </ul>
             <br>
             <img class="brand-logo" src="fslogo.png"></img>
         </div>
+        <br>
         <div class="game-mode">
             <select name="sizeOptions" class="size-options">
-                <option value="">Board Size</option>
+                <option value="">Please Select Board Size</option>
                 <option value="1">6x7</option>
                 <option value="2">8x9</option>
             </select>
         </div>
-        <br>
     </div>
+
+    <!--Buttons for changing board colors-->
+    <div class="relative">
+        <p>Click to change board color:</p>
+        <button class="navitem" id="blue" onclick="toBlue()"></button>
+        <button class="navitem" id="black" onclick="toBlack()"></button>
+        <button class="navitem" id="white" onclick="toWhite()"></button>
+    </div>
+
+    <!--Background shapes-->
+    <div class="container">
+        <div class="square two"></div>
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+      </div>
     <script src="./scripts/constants.js"></script>
     <script src="./scripts/DynamicTable.js"></script>
     <script src="./scripts/EventHandlers.js"></script>
     <script src="./scripts/EventListener.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/board-color.js"></script>
     <script>
         document.querySelector('label').addEventListener('change', (e) => { console.log(e) })
     </script>
