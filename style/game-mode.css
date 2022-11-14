@@ -6,3 +6,24 @@
     display: block;
     margin: 0 auto;
 }
+
+select {
+    width:400px;
+    height:70px;
+    background:#eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: 7px 7px 9px rgba(0,0,0,0.15), -7px -7px 9px rgba(255,255,255,0.65);
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #f3969a;
+}
