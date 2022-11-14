@@ -1,11 +1,11 @@
 function toBlue() {
-    document.getElementById("wrapper").style.backgroundColor = "rgb(47, 58, 217)";
+    document.getElementsByClassName("game-table")[0].style.backgroundColor = "rgb(47, 58, 217)";
 }
 
 function toBlack() {
-    document.getElementById("wrapper").style.backgroundColor = "black";
+    document.getElementsByClassName("game-table")[0].style.backgroundColor = "black";
 }
 
 function toWhite() {
-    document.getElementById("wrapper").style.backgroundColor = "#efeeee";
+    document.getElementsByClassName("game-table")[0].style.backgroundColor = "#efeeee";
 }
